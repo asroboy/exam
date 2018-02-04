@@ -1,0 +1,31 @@
+package com.exam.security
+
+import groovy.transform.EqualsAndHashCode
+import groovy.transform.ToString
+
+import javax.persistence.Embeddable
+import javax.persistence.Entity
+import javax.persistence.Table
+
+@EqualsAndHashCode(includes='authority')
+@ToString(includes='authority', includeNames=true, includePackage=false)
+class Role implements Serializable {
+
+	private static final long serialVersionUID = 1
+
+	String authority
+
+	Role(String authority) {
+		this()
+		this.authority = authority
+	}
+
+	static constraints = {
+		authority blank: false, unique: true
+	}
+
+	static mapping = {
+        table 'tbmrole'
+		cache true
+	}
+}
