@@ -40,8 +40,8 @@ environments {
         dataSource {
             dbCreate = "update"
             url = "jdbc:postgresql://localhost:5432/exam"
-            username = "grails"
-            password = "grails"
+            username = "postgres"
+            password = ""
             properties {
                // Documentation for Tomcat JDBC Pool
                // http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html#Common_Attributes
