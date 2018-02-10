@@ -41,7 +41,7 @@ environments {
             dbCreate = "update"
             url = "jdbc:postgresql://localhost:5432/exam"
             username = "postgres"
-            password = ""
+            password = "exam123456"
             properties {
                // Documentation for Tomcat JDBC Pool
                // http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html#Common_Attributes
